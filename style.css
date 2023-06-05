@@ -1,0 +1,34 @@
+body {
+    overflow-x: hidden;
+}
+
+.files {
+    position: absolute;
+    display: flex;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.backgroundPlayer {
+    z-index: 1;
+}
+
+.backgroundNamePlate {
+    position: absolute;
+    width: auto;
+    height: 100vh;
+}
+
+.notes {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.files {
+    z-index: 5;
+}

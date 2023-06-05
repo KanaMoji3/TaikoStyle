@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>太鼓の達人</title>
+	<!-- favicon -->
+	<link rel="icon"
+		href="https://static.wikia.nocookie.net/taiko/images/4/4a/Site-favicon.ico/revision/latest?cb=20210709144848">
+	<!-- リセットCSS -->
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<!--css-->
+	<link rel="stylesheet" href="style.css">
+	<!--JavaScript-->
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<div>
+		<img src="./images/Background_image.png" class="background">
+		<img src="./images/Background_Under_1_Resize.png" class="background">
+		<img src="./images/Background_Top_1.png" class="background">
+		<img src="./images/Background_Lane.png" class="background">
+		<img src="./images/Background_LaneSub.png" class="background">
+		<img src="./images/judgeCircle.png" class="background">
+		<img src="./images/NamePlate.png" class="backgroundNamePlate">
+		<img src="./images/Background_1P.png" class="background backgroundPlayer">
+		<img src="./images/Drum.png" class="background backgroundPlayer">
+		<img src="./images/ImageReplace.png" class="background backgroundPlayer" id="DonLeftID">
+		<img src="./images/ImageReplace.png" class="background backgroundPlayer" id="DonRightID">
+		<img src="./images/ImageReplace.png" class="background backgroundPlayer" id="KaLeftID">
+		<img src="./images/ImageReplace.png" class="background backgroundPlayer" id="KaRightID">
+		<img src="./images/Background_ClearGauge.png" class="background">
+		<img src="./images/Soul.png" class="background">
+		<img src="./images/SoulGauge.png" class="background">
+		<img src="./images/SoulGauge_Line.png" class="background">
+
+		<!-- ノーツの判定範囲 -->
+		<!-- 左側は 23.5vw まで  -->
+		<!-- 中央は 17.7vw  -->
+		<!-- 右側は 12vw まで  -->
+		<!-- <img src="./images/NotesDonSmall_Resize.png" class="background"> -->
+
+		<!-- 画像の保存を防止するためのimg -->
+		<!-- <img src="./images/ImageReplace.png" class="backgroundMain"> -->
+		<span id="Notes"></span>
+	</div>
+
+	<div>
+		<audio src="./sounds/nc131656.wav" preload="auto" id="DonSound">
+			<audio src="./sounds/nc131657.wav" preload="auto" id="KaSound">
+	</div>
+
+	<div class="files">
+		<input type="file" accept=".tja" id="tjaID">
+		<input type="file" accept=".ogg, .wav" id="musicID">
+	</div>
+</body>
+
+</html>
